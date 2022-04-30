@@ -10,4 +10,14 @@ public class HumanController {
     public String hello(){
         return "Hello!! Welcome to Spring Security";
     }
+
+    @RequestMapping("/admin")
+    public String helloAdmin(){
+        return "Hello!! <h3>Admin<h3> Welcome to Spring Security";
+    }
+
+    @RequestMapping("/user")
+    public String helloUser(){
+        return "Hello!! <h3>User<h3> Welcome to Spring Security";
+    }
 }
